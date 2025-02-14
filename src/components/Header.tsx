@@ -42,11 +42,17 @@ export function Header() {
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <nav className="container mx-auto px-4 py-2">
         <div className="flex justify-between items-center">
+<<<<<<< HEAD
           <div className="flex items-center space-x-3">
+=======
+          <div className="flex items-center space-x-8">
+            {/* Logo */}
+>>>>>>> 0305449 (Initial commit)
             <button 
               onClick={goHome} 
               className="flex items-center group hover:opacity-90 transition duration-200"
             >
+<<<<<<< HEAD
               <Logo className="h-16 w-auto" /> {/* Increased logo size */}
               <div className="ml-3 flex items-baseline">
                 <span className="text-[#E8A95C] font-semibold text-lg">airflow</span>
@@ -66,6 +72,23 @@ export function Header() {
                 {item.name}
               </button>
             ))}
+=======
+              <Logo className="h-16 w-auto" />
+            </button>
+
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex space-x-8">
+              {menuItems.map((item) => (
+                <button
+                  key={item.name}
+                  onClick={() => handleNavigation(item.sectionId)}
+                  className="text-gray-700 hover:text-[#E8A95C] font-medium transition duration-200"
+                >
+                  {item.name}
+                </button>
+              ))}
+            </div>
+>>>>>>> 0305449 (Initial commit)
           </div>
 
           {/* Mobile menu button */}

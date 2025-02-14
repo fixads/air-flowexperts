@@ -9,7 +9,11 @@ export function Logo({ className = "h-8 w-auto" }: LogoProps) {
   return (
     <img
       src={images.logo}
+<<<<<<< HEAD
       alt="PureFlow Logo"
+=======
+      alt="airflow-experts Logo"
+>>>>>>> 0305449 (Initial commit)
       className={className}
     />
   );
